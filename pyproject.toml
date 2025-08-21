@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mentor-booking-AI-ML"
+version = "0.1.0"
+description = "Mentor booking AI/ML project"
+authors = [
+    {name = "Your Name", email = "you@example.com"}
+]
+dependencies = [
+    "numpy",
+    "pandas",
+    "scikit-learn",
+    "matplotlib"
+]
+
+[project.urls]
+Homepage = "https://example.com"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
