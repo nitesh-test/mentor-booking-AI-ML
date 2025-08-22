@@ -1,11 +1,7 @@
 import csv
-from pathlib import Path
 
-DATA_DIR = Path(__file__).resolve().parents[1] / "data"
-
-
-def test_questions_csv_structure():
-    path = DATA_DIR / "questions.csv"
+def test_questions_csv_structure(dataset_dir):
+    path = dataset_dir / "questions.csv"
     with path.open() as f:
         reader = csv.DictReader(f)
         assert set(reader.fieldnames) == {
@@ -22,8 +18,8 @@ def test_questions_csv_structure():
         assert rows[0]["question_id"] == "Q1"
 
 
-def test_question_metadata_csv_structure():
-    path = DATA_DIR / "question_metadata.csv"
+def test_question_metadata_csv_structure(dataset_dir):
+    path = dataset_dir / "question_metadata.csv"
     with path.open() as f:
         reader = csv.DictReader(f)
         assert set(reader.fieldnames) == {
@@ -39,8 +35,8 @@ def test_question_metadata_csv_structure():
         assert rows[0]["topic"] == "Quadratic Equations"
 
 
-def test_student_responses_csv_structure():
-    path = DATA_DIR / "student_responses.csv"
+def test_student_responses_csv_structure(dataset_dir):
+    path = dataset_dir / "student_responses.csv"
     with path.open() as f:
         reader = csv.DictReader(f)
         assert set(reader.fieldnames) == {
