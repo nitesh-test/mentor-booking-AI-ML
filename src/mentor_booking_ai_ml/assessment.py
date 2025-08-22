@@ -110,6 +110,7 @@ def recommend_courses(
     ]
 
 
+
 def load_question_bank(questions_csv: Path, metadata_csv: Path) -> List[Question]:
     """Load questions and merge with metadata to attach topics."""
 
@@ -153,3 +154,4 @@ def strong_weak_topics_for_students(
         weak = min(scores, key=scores.get)
         results[sid] = {"strong": strong, "weak": weak}
     return results
+
