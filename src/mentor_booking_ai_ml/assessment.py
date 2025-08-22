@@ -8,7 +8,10 @@ with only the Python standard library so that it runs in minimal environments.
 
 from __future__ import annotations
 
+import csv
 from dataclasses import dataclass
+from pathlib import Path
+from collections import defaultdict
 from typing import Dict, List
 
 
@@ -105,3 +108,50 @@ def recommend_courses(
         for topic, score in topic_scores.items()
         if score < threshold and topic in course_map
     ]
+
+
+
+def load_question_bank(questions_csv: Path, metadata_csv: Path) -> List[Question]:
+    """Load questions and merge with metadata to attach topics."""
+
+    topic_map: Dict[str, str] = {}
+    with metadata_csv.open() as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            topic_map[row["question_id"]] = row["sub_topics"]
+
+    questions: List[Question] = []
+    with questions_csv.open() as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            qid = row["question_id"]
+            questions.append(Question(qid, row["correct_answer"], topic_map.get(qid, "")))
+    return questions
+
+
+def load_student_responses(responses_csv: Path) -> Dict[str, List[Response]]:
+    """Load student responses keyed by student id."""
+
+    by_student: Dict[str, List[Response]] = defaultdict(list)
+    with responses_csv.open() as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            by_student[row["student_id"]].append(Response(row["question_id"], row["student_response"]))
+    return by_student
+
+
+def strong_weak_topics_for_students(
+    questions: List[Question], responses: Dict[str, List[Response]]
+) -> Dict[str, Dict[str, str]]:
+    """Determine the strongest and weakest topic for each student."""
+
+    results: Dict[str, Dict[str, str]] = {}
+    for sid, resps in responses.items():
+        scores = calculate_topic_scores(questions, resps)
+        if not scores:
+            continue
+        strong = max(scores, key=scores.get)
+        weak = min(scores, key=scores.get)
+        results[sid] = {"strong": strong, "weak": weak}
+    return results
+

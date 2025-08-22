@@ -1,9 +1,15 @@
+
+from pathlib import Path
+
 from mentor_booking_ai_ml import (
     Question,
     Response,
     calculate_topic_scores,
     cluster_students,
     recommend_courses,
+    load_question_bank,
+    load_student_responses,
+    strong_weak_topics_for_students,
 )
 
 
@@ -37,3 +43,11 @@ def test_cluster_and_recommend():
     course_map = {"Topic1": "Intro Topic1", "Topic2": "Intro Topic2"}
     recommendations = recommend_courses(student_scores[0], course_map, threshold=60)
     assert recommendations == ["Intro Topic2"]
+
+def test_strong_weak_topics_from_csv():
+    data_dir = Path(__file__).resolve().parents[1] / "data"
+    questions = load_question_bank(data_dir / "questions.csv", data_dir / "question_metadata.csv")
+    responses = load_student_responses(data_dir / "student_responses.csv")
+    analysis = strong_weak_topics_for_students(questions, responses)
+    assert analysis["S1"] == {"strong": "Roots", "weak": "Discriminant"}
+
