@@ -21,3 +21,9 @@ venv/
 
 # OS files
 .DS_Store
+
+# Generated data
+data/
+
+# Compiled object files
+*.o

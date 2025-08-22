@@ -10,8 +10,8 @@ from .assessment import (
     load_question_bank,
     load_student_responses,
     strong_weak_topics_for_students,
-
 )
+from .datasets import generate_dataset
 
 __all__ = [
     "add",
@@ -24,6 +24,8 @@ __all__ = [
     "load_question_bank",
     "load_student_responses",
     "strong_weak_topics_for_students",
+
+    "generate_dataset",
 
 ]
 
