@@ -1,0 +1,11 @@
+student_id,question_id,student_response,correct_answer,time_taken_sec,is_correct
+S1,Q1,C,C,30,True
+S1,Q2,C,C,45,True
+S1,Q3,B,B,25,True
+S2,Q1,A,C,40,False
+S2,Q2,A,C,35,False
+S2,Q3,A,B,50,False
+S1,Q4,D,D,60,True
+S2,Q4,C,D,55,False
+S1,Q5,B,B,20,True
+S2,Q5,C,B,30,False

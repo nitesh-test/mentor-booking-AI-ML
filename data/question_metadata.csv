@@ -1,0 +1,6 @@
+question_id,topic,sub_topics,difficulty,marks,question_type
+Q1,Biology,"Cells;Organelles",Easy,2,MCQ
+Q2,Biology,"Plants;Gases",Medium,3,MCQ
+Q3,Biology,"Metabolism;Energy",Medium,3,MCQ
+Q4,Biology,"Human Body;Endocrine",Hard,5,MCQ
+Q5,Astronomy,"Planets;Solar System",Easy,2,MCQ
