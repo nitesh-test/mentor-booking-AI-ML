@@ -1,6 +1,51 @@
 question_id,topic,sub_topics,difficulty,marks,question_type
-Q1,Biology,"Cells;Organelles",Easy,2,MCQ
-Q2,Biology,"Plants;Gases",Medium,3,MCQ
-Q3,Biology,"Metabolism;Energy",Medium,3,MCQ
-Q4,Biology,"Human Body;Endocrine",Hard,5,MCQ
-Q5,Astronomy,"Planets;Solar System",Easy,2,MCQ
+Q1,Quadratic Equations,Factoring,Easy,1,MCQ
+Q2,Quadratic Equations,Factoring,Easy,1,MCQ
+Q3,Quadratic Equations,Factoring,Easy,1,MCQ
+Q4,Quadratic Equations,Factoring,Easy,1,MCQ
+Q5,Quadratic Equations,Factoring,Easy,1,MCQ
+Q6,Quadratic Equations,Factoring,Easy,1,MCQ
+Q7,Quadratic Equations,Factoring,Easy,1,MCQ
+Q8,Quadratic Equations,Factoring,Easy,1,MCQ
+Q9,Quadratic Equations,Factoring,Easy,1,MCQ
+Q10,Quadratic Equations,Factoring,Easy,1,MCQ
+Q11,Quadratic Equations,Roots,Easy,1,MCQ
+Q12,Quadratic Equations,Roots,Easy,1,MCQ
+Q13,Quadratic Equations,Roots,Easy,1,MCQ
+Q14,Quadratic Equations,Roots,Easy,1,MCQ
+Q15,Quadratic Equations,Roots,Easy,1,MCQ
+Q16,Quadratic Equations,Roots,Easy,1,MCQ
+Q17,Quadratic Equations,Roots,Easy,1,MCQ
+Q18,Quadratic Equations,Roots,Easy,1,MCQ
+Q19,Quadratic Equations,Roots,Easy,1,MCQ
+Q20,Quadratic Equations,Roots,Easy,1,MCQ
+Q21,Quadratic Equations,Vertex,Easy,1,MCQ
+Q22,Quadratic Equations,Vertex,Easy,1,MCQ
+Q23,Quadratic Equations,Vertex,Easy,1,MCQ
+Q24,Quadratic Equations,Vertex,Easy,1,MCQ
+Q25,Quadratic Equations,Vertex,Easy,1,MCQ
+Q26,Quadratic Equations,Vertex,Medium,2,MCQ
+Q27,Quadratic Equations,Vertex,Medium,2,MCQ
+Q28,Quadratic Equations,Vertex,Medium,2,MCQ
+Q29,Quadratic Equations,Vertex,Medium,2,MCQ
+Q30,Quadratic Equations,Vertex,Medium,2,MCQ
+Q31,Quadratic Equations,Discriminant,Medium,2,MCQ
+Q32,Quadratic Equations,Discriminant,Medium,2,MCQ
+Q33,Quadratic Equations,Discriminant,Medium,2,MCQ
+Q34,Quadratic Equations,Discriminant,Medium,2,MCQ
+Q35,Quadratic Equations,Discriminant,Medium,2,MCQ
+Q36,Quadratic Equations,Discriminant,Medium,2,MCQ
+Q37,Quadratic Equations,Discriminant,Medium,2,MCQ
+Q38,Quadratic Equations,Discriminant,Medium,2,MCQ
+Q39,Quadratic Equations,Discriminant,Medium,2,MCQ
+Q40,Quadratic Equations,Discriminant,Medium,2,MCQ
+Q41,Quadratic Equations,Graphing,Medium,2,MCQ
+Q42,Quadratic Equations,Graphing,Medium,2,MCQ
+Q43,Quadratic Equations,Graphing,Medium,2,MCQ
+Q44,Quadratic Equations,Graphing,Medium,2,MCQ
+Q45,Quadratic Equations,Graphing,Medium,2,MCQ
+Q46,Quadratic Equations,Graphing,Medium,2,MCQ
+Q47,Quadratic Equations,Graphing,Medium,2,MCQ
+Q48,Quadratic Equations,Graphing,Medium,2,MCQ
+Q49,Quadratic Equations,Graphing,Medium,2,MCQ
+Q50,Quadratic Equations,Graphing,Medium,2,MCQ

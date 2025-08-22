@@ -7,6 +7,9 @@ from .assessment import (
     calculate_topic_scores,
     cluster_students,
     recommend_courses,
+    load_question_bank,
+    load_student_responses,
+    strong_weak_topics_for_students,
 )
 
 __all__ = [
@@ -16,6 +19,9 @@ __all__ = [
     "calculate_topic_scores",
     "cluster_students",
     "recommend_courses",
+    "load_question_bank",
+    "load_student_responses",
+    "strong_weak_topics_for_students",
 ]
 
 __version__ = "0.1.0"

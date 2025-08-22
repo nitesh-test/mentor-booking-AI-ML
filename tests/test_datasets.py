@@ -17,8 +17,9 @@ def test_questions_csv_structure():
             "option_c",
             "option_d",
         }
-        first = next(reader)
-        assert first["question_id"] == "Q1"
+        rows = list(reader)
+        assert len(rows) == 50
+        assert rows[0]["question_id"] == "Q1"
 
 
 def test_question_metadata_csv_structure():
@@ -33,8 +34,9 @@ def test_question_metadata_csv_structure():
             "marks",
             "question_type",
         }
-        first = next(reader)
-        assert first["topic"] == "Biology"
+        rows = list(reader)
+        assert len(rows) == 50
+        assert rows[0]["topic"] == "Quadratic Equations"
 
 
 def test_student_responses_csv_structure():
@@ -49,5 +51,6 @@ def test_student_responses_csv_structure():
             "time_taken_sec",
             "is_correct",
         }
-        first = next(reader)
-        assert first["student_id"] == "S1"
+        rows = list(reader)
+        assert len(rows) == 50 * 50
+        assert rows[0]["student_id"] == "S1"
