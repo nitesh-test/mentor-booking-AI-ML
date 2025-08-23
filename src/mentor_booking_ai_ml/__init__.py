@@ -18,8 +18,6 @@ from .ocr_openai import (
 )
 from .solution_checker import check_solution_steps
 
-)
-
 __all__ = [
     "add",
     "Question",
