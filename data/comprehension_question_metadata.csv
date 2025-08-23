@@ -1,0 +1,4 @@
+question_id,topic,sub_topics,difficulty,marks,question_type
+CQ1,Reading,Main Idea,Easy,1,MCQ
+CQ2,Reading,Vocabulary,Medium,1,MCQ
+CQ3,Reading,Inference,Medium,1,MCQ
