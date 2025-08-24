@@ -44,6 +44,7 @@ def test_cluster_and_recommend():
     recommendations = recommend_courses(student_scores[0], course_map, threshold=60)
     assert recommendations == ["Intro Topic2"]
 
+
 def test_strong_weak_topics_from_csv():
     data_dir = Path(__file__).resolve().parents[1] / "data"
     questions = load_question_bank(data_dir / "questions.csv", data_dir / "question_metadata.csv")
