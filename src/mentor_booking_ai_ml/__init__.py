@@ -17,6 +17,7 @@ from .ocr_openai import (
     ocr_and_ask_openai,
 )
 from .solution_checker import check_solution_steps
+from .pipeline import run_assessment_pipeline
 
 __all__ = [
     "add",
@@ -32,6 +33,7 @@ __all__ = [
     "ask_openai",
     "ocr_and_ask_openai",
     "check_solution_steps",
+    "run_assessment_pipeline",
 ]
 
 __version__ = "0.1.0"
